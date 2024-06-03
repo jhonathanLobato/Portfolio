@@ -1,0 +1,12 @@
+.cabecalhoPrincipal_container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho_nav{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 17px;
+}
