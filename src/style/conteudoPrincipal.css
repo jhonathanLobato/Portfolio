@@ -8,7 +8,7 @@
 
 /* TEXTO 'SOBRE MIM' */
 .conteudoPrincipal {
-    margin: 30px 150px;
+    margin: 30px 300px;
     padding: 0px 10px;
 }
 
@@ -17,9 +17,12 @@
 }
 
 /* -- AQUI COMEÇA O MAIN -- */
+.mainPrincipal {
+    margin: 20px 130px;
+}
 
 .projetosContainer {
-    margin: 40px 50px;
+    margin: 40px 150px;
     display: flex;
 }
 
@@ -44,8 +47,8 @@
 }
 
 /* CONTATOS */
-.contatosPrincipal {
-    margin: 20px 100px;
+.listaPadrao {
+    list-style: none;
 }
 
 .nomeContatos {
