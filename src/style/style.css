@@ -1,6 +1,7 @@
 @import url(./cabecalho.css);
 @import url(./conteudoPrincipal.css);
 @import url(./rodape.css);
+@import url(./responsivo.css);
 
 /* Alguumas classes globais */
 body {
@@ -25,4 +26,9 @@ body {
 
 p {
     margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    line-height: 20px;
 }
