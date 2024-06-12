@@ -1,0 +1,29 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.competencia_titulo {
+    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
+    /* @include mixins.margem-central(95%); */
+    margin: variaveis.$margin-titulo;
+    margin-bottom: 1.5rem;
+}
+.ferramentasPrincipal {
+    @include mixins.margem-central(80%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    .div_lista {
+        border: 1px solid white;
+        border-radius: 7px;
+        padding-left: 15px;
+        .titulo__ferramenta {
+            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
+        }
+        .lista__ferrameta {
+            list-style: none;
+            .tamanhoTexto {
+                @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
+            }
+        }
+    }
+}

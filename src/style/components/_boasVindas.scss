@@ -1,0 +1,18 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.conteudoMain {
+    .boas_vindaTexto {
+        margin-top: 3.5rem;
+        text-align: center;
+        @include mixins.ff-fs-color(variaveis.$ft-titulos, 2.5rem, variaveis.$cor-texto);
+    }
+    .conteudoMain_descricao{
+        @include mixins.margem-central(60%);
+        .texto_descricao {
+            @include mixins.ff-fs-color(variaveis.$ft-texto, 1.1rem, variaveis.$cor-texto);
+            text-align: center;
+            line-height: 1.5rem;
+        }
+    }
+}

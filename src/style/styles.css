@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0c141c;
+}
+
+.cabecalho .cabecalho_div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cabecalho .cabecalho_div .texto {
+  color: #d3d7bd;
+}
+.cabecalho .cabecalho_div .texto_nav {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 17px;
+  color: #d3d7bd;
+}
+
+.conteudoMain .boas_vindaTexto {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #d3d7bd;
+}
+.conteudoMain .conteudoMain_descricao {
+  margin: 0 auto;
+  width: 60%;
+}
+.conteudoMain .conteudoMain_descricao .texto_descricao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #d3d7bd;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.competencia_titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #d3d7bd;
+  /* @include mixins.margem-central(95%); */
+  margin: 3.5rem 0 0 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ferramentasPrincipal {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.ferramentasPrincipal .div_lista {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding-left: 15px;
+}
+.ferramentasPrincipal .div_lista .titulo__ferramenta {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #d3d7bd;
+}
+.ferramentasPrincipal .div_lista .lista__ferrameta {
+  list-style: none;
+}
+.ferramentasPrincipal .div_lista .lista__ferrameta .tamanhoTexto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #d3d7bd;
+}
+
+.projeto_titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #d3d7bd;
+  /* @include mixins.margem-central(95%); */
+  margin: 3.5rem 0 0 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.projetos_container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+}
+.projetos_container .projeto_imagem {
+  margin: 0 auto;
+  width: 230%;
+  margin-bottom: 2rem;
+}
+.projetos_container .projeto_imagem .img_projeto {
+  max-width: 100%;
+}
+.projetos_container .projeto_texto {
+  margin-left: 1.5rem;
+}
+.projetos_container .projeto_texto .titulo_projeto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #d3d7bd;
+  margin: 0;
+}
+.projetos_container .projeto_texto .descricao_projeto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #d3d7bd;
+  line-height: 1.5rem;
+}
+.projetos_container .projeto_texto .botao_projeto {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  align-items: end;
+  background: #4B4B4B;
+}/*# sourceMappingURL=styles.css.map */

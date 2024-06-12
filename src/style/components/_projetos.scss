@@ -1,0 +1,39 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.projeto_titulo {
+    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
+    /* @include mixins.margem-central(95%); */
+    margin: variaveis.$margin-titulo;
+    margin-bottom: 1.5rem;
+}
+.projetos_container {
+    @include mixins.margem-central(80%);
+    display: flex;
+    gap: 1rem;
+    .projeto_imagem {
+        @include mixins.margem-central(230%);
+        margin-bottom: 2rem;
+        .img_projeto {
+            max-width: 100%;
+        }
+    }
+    .projeto_texto {
+        margin-left: 1.5rem;
+        .titulo_projeto {
+            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
+            margin: 0;
+        }
+        .descricao_projeto {
+            @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
+            line-height: 1.5rem;
+        }
+        .botao_projeto {
+            border: 1px solid white;
+            border-radius: 7px;
+            padding: 10px;
+            align-items: end;
+            background: #4B4B4B;
+        }
+    }
+}
