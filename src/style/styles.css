@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background: #0c141c;
 }
@@ -14,7 +14,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   color: #d3d7bd;
-  color: #d3d7bd;
 }
 .cabecalho .cabecalho_div .texto_nav {
   text-decoration: none;
@@ -24,6 +23,14 @@ body {
   color: #d3d7bd;
 }
 
+@media (max-width: 480px) {
+  .nome_titulo {
+    display: none;
+  }
+  .texto_nav {
+    width: auto;
+  }
+}
 .conteudoMain .boas_vindaTexto {
   margin-top: 3.5rem;
   text-align: center;
@@ -61,7 +68,7 @@ body {
 .ferramentas_principal .div_lista {
   border: 1px solid white;
   border-radius: 7px;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-top: 1rem;
 }
 .ferramentas_principal .div_lista .titulo__ferramenta {
@@ -90,37 +97,29 @@ body {
 .projetos_container {
   margin: 0 auto;
   width: 80%;
-  display: flex;
-  gap: 1rem;
-}
-.projetos_container .projeto_imagem {
-  margin: 0 auto;
-  width: 230%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
-.projetos_container .projeto_imagem .img_projeto {
-  max-width: 100%;
+.projetos_container .img_projeto {
+  width: 100%;
+  height: auto;
 }
 .projetos_container .projeto_texto {
-  font-family: "poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: #d3d7bd;
-  margin-left: 1.5rem;
 }
 .projetos_container .projeto_texto .titulo_projeto {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: #d3d7bd;
-  margin: 0;
-}
-.projetos_container .projeto_texto .descricao_projeto {
-  line-height: 1.5rem;
 }
 .projetos_container .projeto_texto .btn_projeto {
-  margin-top: 6rem;
-}
-.projetos_container .projeto_texto .btn_projeto a {
-  text-decoration: none;
+  margin-top: auto;
 }
 
 .divisor_borda {

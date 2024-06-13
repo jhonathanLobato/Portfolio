@@ -1,5 +1,5 @@
-@use '../abstract/variaveis';
-@use '../abstract/mixins';
+@use '../base/variaveis';
+@use '../utilities/mixins';
 
 .conteudoMain {
     .boas_vindaTexto {
@@ -16,3 +16,4 @@
         }
     }
 }
+

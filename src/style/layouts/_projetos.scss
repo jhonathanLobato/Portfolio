@@ -1,0 +1,31 @@
+@use '../base/variaveis';
+@use '../utilities/mixins';
+
+.projeto_titulo {
+    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
+    /* @include mixins.margem-central(95%); */
+    margin: variaveis.$margin-titulo;
+    margin-bottom: 1.5rem;
+}
+.projetos_container {
+    @include mixins.margem-central(80%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    .img_projeto {
+        width: 100%;
+        height: auto;
+    }
+    .projeto_texto {
+        display: flex;
+        flex-direction: column;
+        @include mixins.ff-fs-color(variaveis.$ft-titulos, 1rem, variaveis.$cor-texto);
+        .titulo_projeto {
+            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
+        }
+        .btn_projeto {
+            margin-top: auto;
+        }
+    }
+}

@@ -1,5 +1,5 @@
-@use '../abstract/variaveis';
-@use '../abstract/mixins';
+@use '../base/variaveis';
+@use '../utilities/mixins';
 
 .divisor_borda {
     @include mixins.ff-fs-color(variaveis.$ft-titulos, 1rem, variaveis.$cor-texto);

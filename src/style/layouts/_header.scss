@@ -1,5 +1,5 @@
-@use '../abstract/variaveis';
-@use '../abstract/mixins';
+@use '../base/variaveis';
+@use '../utilities/mixins';
 
 .cabecalho {
     .cabecalho_div {
@@ -9,7 +9,6 @@
         align-items: center;
         .nome_titulo {
             @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
-            color: variaveis.$cor-texto;
         }
         .texto_nav {
             text-decoration: none;
@@ -17,4 +16,13 @@
             @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
         }
     }  
+}
+
+@media (max-width: 480px) {
+    .nome_titulo {
+        display: none;
+    }
+    .texto_nav {
+        width: auto;
+    }
 }

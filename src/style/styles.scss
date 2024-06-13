@@ -1,6 +1,6 @@
-@use './abstract/root';
-@use './components/header';
-@use './components/boasVindas';
-@use './components/competencias';
-@use './components/projetos';
-@use './components/rodape';
+@use './base/root';
+@use './layouts/header';
+@use './layouts/boasVindas';
+@use './layouts/competencias';
+@use './layouts/projetos';
+@use './layouts/rodape';
