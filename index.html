@@ -4,46 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Jhonathan Lobato</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"> <!-- Inserindo as fontes -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Inserindo o bootstrap -->
     <link rel="stylesheet" href="./src/style/styles.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="cabecalho_div">
-            <h3 class="texto">Jhonathan Lobato</h3>
+            <h3 class="nome_titulo">Jhonathan Lobato</h3>
             <nav>
-                <a href="index.html" class="texto_nav">Home</a>
-                <a href="#" class="texto_nav">Contatos</a>
-                <a href="#" class="texto_nav">Sobre mim</a>
+                <a href="#projetos" class="texto_nav">Projetos</a>
+                <a href="#contatos" class="texto_nav">Contatos</a>
+                <a href="#sobre_mim" class="texto_nav">Sobre mim</a>
             </nav>
         </div>
     </header>
     <main class="conteudoMain">
         <!-- TITULO DE BOAS VINDAS -->
-        <h1 class="boas_vindaTexto">OLÁ VISITANTE, SEJA BEM VINDO</h1>
+        <h1 class="boas_vindaTexto" id="sobre_mim">OLÁ VISITANTE, SEJA BEM VINDO</h1>
         <!-- SOBRE MIM -->
         <section class="conteudoMain_descricao">
             <p class="texto_descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum, atque debitis sit doloremque illum perspiciatis sint distinctio numquam ullam voluptates quae voluptatum quos asperiores? Illum magnam voluptates itaque quam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum, atque debitis sit doloremque illum perspiciatis sint distinctio numquam ullam voluptates quae voluptatum quos asperiores? Illum magnam voluptates itaque quam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum, atque debitis sit doloremque illum perspiciatis sint distinctio numquam ullam voluptates quae voluptatum quos asperiores? Illum magnam voluptates itaque quam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum, atque debitis sit doloremque illum perspiciatis sint distinctio numquam ullam voluptates quae voluptatum quos asperiores? Illum magnam voluptates itaque quam?</p>
         </section>
         <!-- LISTAR AS MINHAS HABILIDADES E DEIXAR ELAS EM COLUNAS JUNTAS.. -->
         <h2 class="competencia_titulo">COMPETÊNCIAS - HARDS SKILLS</h2>
-        <section class="ferramentasPrincipal">
+        <section class="ferramentas_principal">
             <!-- Linguagens de Programações -->
             <div class="div_lista">
                 <h3 class="titulo__ferramenta">Linguagens de Programação</h3>
                 <ul class="lista__ferrameta">
                     <li>
-                        <p class="tamanhoTexto">HTML / CSS</p>
-                    </li>
-                    <li>
                         <p class="tamanhoTexto">Python</p>
                     </li>
                     <li>
-                        <p class="tamanhoTexto">JavaScript</p>
+                        <p class="tamanhoTexto">Linguagem SQL</p>
                     </li>
                     <li>
-                        <p class="tamanhoTexto">Linguagem SQL</p>
+                        <p class="tamanhoTexto">HTML / CSS</p>
+                    </li>
+                    <li>
+                        <p class="tamanhoTexto">JavaScript</p>
                     </li>
                 </ul>
             </div>
@@ -97,7 +98,7 @@
             </div>
         </section>
         <!-- PROJETOS -->
-        <h2 class="projeto_titulo">PROJETOS</h2>
+        <h2 class="projeto_titulo" id="projetos">PROJETOS PESSOAIS</h2>
         <section class="projetos_container">
             <div class="projeto_imagem">
                 <img class="img_projeto" src="./src/img/real-madrid-campeao-champions-848x477.jpeg" alt="foto real madrid campeão 2024">
@@ -105,7 +106,9 @@
             <div class="projeto_texto">    
                 <h3 class="titulo_projeto">PROJETO SOBRE WEB 1</h3>
                 <P class="descricao_projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et quia? Quia quam veritatis quaerat laborum deleniti corporis veniam sed consequatur sint vitae amet doloremque delectus, culpa reiciendis cum eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut obcaecati at ab laudantium, illum necessitatibus autem harum itaque distinctio, optio nisi adipisci temporibus consequatur expedita eum est sed velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae blanditiis incidunt ab repellendus laboriosam quibusdam magnam, voluptatum corrupti assumenda reiciendis eligendi dignissimos! Vero autem aperiam neque, quasi aut itaque temporibus.</P>
-                <a class="botao_projeto" href="#">Ver Projeto >></a>
+                <div class="btn_projeto">
+                    <a class="btn btn-dark btn_projeto__a" target="_blank" href="#" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
             </div>           
         </section>
         <section class="projetos_container">
@@ -115,28 +118,49 @@
             <div class="projeto_texto">    
                 <h3 class="titulo_projeto">Projeto sobre web 2</h3>
                 <P class="descricao_projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et quia? Quia quam veritatis quaerat laborum deleniti corporis veniam sed consequatur sint vitae amet doloremque delectus, culpa reiciendis cum eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut obcaecati at ab laudantium, illum necessitatibus autem harum itaque distinctio, optio nisi adipisci temporibus consequatur expedita eum est sed velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae blanditiis incidunt ab repellendus laboriosam quibusdam magnam, voluptatum corrupti assumenda reiciendis eligendi dignissimos! Vero autem aperiam neque, quasi aut itaque temporibus.</P>
-                <a class="botao_projeto" href="#">Ver Projeto >></a>
+                <div class="btn_projeto">
+                    <a class="btn btn-dark btn_projeto__a" target="_blank" href="#" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
             </div>           
         </section>
-        <!-- CONTATOS -->
-        <h2 class="titulo texto">CONTATOS</h2>
-        <section class="mainPrincipal">
-            <p class="texto tamanhoTexto">Algumas maneiras de entrar em contato comigo</p>
-            <ul>
-                <li class="listaPadrao">
-                    <a class="nomeContatos texto" target="_blank" href="https://www.linkedin.com/in/jhonathan-lobato/" rel="noopener noreferrer"><p>Linkedin</p></a>
-                </li>
-                <li class="listaPadrao">
-                    <a class="nomeContatos texto" target="_blank" href="https://github.com/jhonathanLobato" rel="noopener noreferrer"><p>GitHub</p></a>
-                </li>
-                <li class="listaPadrao">
-                    <p class="nomeContatos texto">jhonathanlobato20@gmail.com</p>
-                </li>
-            </ul>
+        <!-- PROJETOS -->
+        <h2 class="projeto_titulo">PROJETOS PESSOAIS</h2>
+        <section class="projetos_container">
+            <div class="projeto_imagem">
+                <img class="img_projeto" src="./src/img/real-madrid-campeao-champions-848x477.jpeg" alt="foto real madrid campeão 2024">
+            </div>
+            <div class="projeto_texto">    
+                <h3 class="titulo_projeto">PROJETO SOBRE WEB 1</h3>
+                <P class="descricao_projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et quia? Quia quam veritatis quaerat laborum deleniti corporis veniam sed consequatur sint vitae amet doloremque delectus, culpa reiciendis cum eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut obcaecati at ab laudantium, illum necessitatibus autem harum itaque distinctio, optio nisi adipisci temporibus consequatur expedita eum est sed velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae blanditiis incidunt ab repellendus laboriosam quibusdam magnam, voluptatum corrupti assumenda reiciendis eligendi dignissimos! Vero autem aperiam neque, quasi aut itaque temporibus.</P>
+                <div class="btn_projeto">
+                    <a class="btn btn-dark btn_projeto__a" target="_blank" href="#" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>           
+        </section>
+        <section class="projetos_container">
+            <div class="projeto_imagem">
+                <img class="img_projeto" src="./src/img/real-madrid-campeao-champions-848x477.jpeg" alt="foto real madrid campeão 2024">
+            </div>
+            <div class="projeto_texto">    
+                <h3 class="titulo_projeto">Projeto sobre web 2</h3>
+                <P class="descricao_projeto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, et quia? Quia quam veritatis quaerat laborum deleniti corporis veniam sed consequatur sint vitae amet doloremque delectus, culpa reiciendis cum eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut obcaecati at ab laudantium, illum necessitatibus autem harum itaque distinctio, optio nisi adipisci temporibus consequatur expedita eum est sed velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae blanditiis incidunt ab repellendus laboriosam quibusdam magnam, voluptatum corrupti assumenda reiciendis eligendi dignissimos! Vero autem aperiam neque, quasi aut itaque temporibus.</P>
+                <div class="btn_projeto">
+                    <a class="btn btn-dark btn_projeto__a" target="_blank" href="#" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>           
         </section>
     </main>
-    <footer class="rodapePrincipal">
-        <p class="texto rodapeTexto">&copy; 2024 Jhonathan Lobato</p>
+    <footer class="text-center py-3 divisor_borda" id="contatos">
+        <!-- CONTATOS -->
+        <section>
+            <p class="footer_titulo">Algumas maneiras de entrar em contato comigo</p>
+            <div class="d-flex justify-content-center footer_div">
+                <a target="_blank" href="https://www.linkedin.com/in/jhonathan-lobato/" rel="noopener noreferrer" class="btn btn-outline-light mx-2 btn_a">LinkedIn</a>
+                <a target="_blank" href="https://github.com/jhonathanLobato" rel="noopener noreferrer" class="btn btn-outline-light mx-2 btn_a">GitHub</a>
+            </div>
+            <p class="mt-3 email_contato">Email: jhonathanlobato20@gmail.com</p>
+        </section>
+        <p class="footer_copy">&copy; 2024 Jhonathan Lobato</p>
     </footer>
 </body>
 </html>

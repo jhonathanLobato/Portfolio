@@ -3,11 +3,10 @@
 
 .competencia_titulo {
     @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
-    /* @include mixins.margem-central(95%); */
     margin: variaveis.$margin-titulo;
     margin-bottom: 1.5rem;
 }
-.ferramentasPrincipal {
+.ferramentas_principal {
     @include mixins.margem-central(80%);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,6 +15,7 @@
         border: 1px solid white;
         border-radius: 7px;
         padding-left: 15px;
+        padding-top: 1rem;
         .titulo__ferramenta {
             @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
         }

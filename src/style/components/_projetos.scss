@@ -19,21 +19,20 @@
         }
     }
     .projeto_texto {
+        @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
         margin-left: 1.5rem;
         .titulo_projeto {
-            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
+            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
             margin: 0;
         }
         .descricao_projeto {
-            @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
             line-height: 1.5rem;
         }
-        .botao_projeto {
-            border: 1px solid white;
-            border-radius: 7px;
-            padding: 10px;
-            align-items: end;
-            background: #4B4B4B;
+        .btn_projeto {
+            margin-top: 6rem;
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
