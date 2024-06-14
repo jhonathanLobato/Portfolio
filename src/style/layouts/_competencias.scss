@@ -5,6 +5,7 @@
     @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
     margin: variaveis.$margin-titulo;
     margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 .ferramentas_principal {
     @include mixins.margem-central(80%);
@@ -18,6 +19,7 @@
         padding-top: 1rem;
         .titulo__ferramenta {
             @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.2rem, variaveis.$cor-texto);
+            font-weight: bold;
         }
         .lista__ferrameta {
             list-style: none;
@@ -25,5 +27,23 @@
                 @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
             }
         }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .competencia_titulo {
+        margin-left: 1rem;
+    }
+    .ferramentas_principal{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lista__ferrameta {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .ferramentas_principal{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

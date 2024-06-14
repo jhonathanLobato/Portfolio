@@ -1,19 +1,31 @@
 @use '../base/variaveis';
 @use '../utilities/mixins';
 
-.conteudoMain {
+.boas_vindas {
     .boas_vindaTexto {
+        @include mixins.margem-central(90%);
+        text-align: justify;
         margin-top: 3.5rem;
         text-align: center;
+        font-weight: bold;
         @include mixins.ff-fs-color(variaveis.$ft-titulos, 2.5rem, variaveis.$cor-texto);
     }
     .conteudoMain_descricao{
         @include mixins.margem-central(60%);
         .texto_descricao {
             @include mixins.ff-fs-color(variaveis.$ft-texto, 1.1rem, variaveis.$cor-texto);
-            text-align: center;
+            text-align: justify;
             line-height: 1.5rem;
         }
     }
 }
 
+@media screen and (max-width: 780px) {
+    .conteudoMain {
+        .boas_vindas {
+            .conteudoMain_descricao {
+                width: 85%;
+            }
+        }
+    }
+}

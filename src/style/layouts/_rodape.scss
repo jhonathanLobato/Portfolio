@@ -2,17 +2,18 @@
 @use '../utilities/mixins';
 
 .divisor_borda {
-    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1rem, variaveis.$cor-texto);
+    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.3rem, variaveis.$cor-texto);
     width: 80%;
     margin: 0 auto;
     border-top: 1px solid white;
     margin-top: 5rem;
     section {
-        .footer_titulo {
-            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.3rem, variaveis.$cor-texto);
-        }
         .btn_a {
-            padding: 0.7rem;
+            padding: 1rem;
+        }
+        .email_contato {
+            font-size: 1.1rem;
+            font-weight: bold;
         }
     }
     .footer_copy {

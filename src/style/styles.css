@@ -31,31 +31,41 @@ body {
     width: auto;
   }
 }
-.conteudoMain .boas_vindaTexto {
+.boas_vindas .boas_vindaTexto {
+  margin: 0 auto;
+  width: 90%;
+  text-align: justify;
   margin-top: 3.5rem;
   text-align: center;
+  font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   color: #d3d7bd;
 }
-.conteudoMain .conteudoMain_descricao {
+.boas_vindas .conteudoMain_descricao {
   margin: 0 auto;
   width: 60%;
 }
-.conteudoMain .conteudoMain_descricao .texto_descricao {
+.boas_vindas .conteudoMain_descricao .texto_descricao {
   font-family: "poppins", sans-serif;
   font-size: 1.1rem;
   color: #d3d7bd;
-  text-align: center;
+  text-align: justify;
   line-height: 1.5rem;
 }
 
+@media screen and (max-width: 780px) {
+  .conteudoMain .boas_vindas .conteudoMain_descricao {
+    width: 85%;
+  }
+}
 .competencia_titulo {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: #d3d7bd;
   margin: 3.5rem 0 0 5rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .ferramentas_principal {
@@ -75,6 +85,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   color: #d3d7bd;
+  font-weight: bold;
 }
 .ferramentas_principal .div_lista .lista__ferrameta {
   list-style: none;
@@ -85,11 +96,27 @@ body {
   color: #d3d7bd;
 }
 
+@media screen and (max-width: 1024px) {
+  .competencia_titulo {
+    margin-left: 1rem;
+  }
+  .ferramentas_principal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lista__ferrameta {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ferramentas_principal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .projeto_titulo {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: #d3d7bd;
-  /* @include mixins.margem-central(95%); */
+  font-weight: bold;
   margin: 3.5rem 0 0 5rem;
   margin-bottom: 1.5rem;
 }
@@ -110,34 +137,55 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #d3d7bd;
 }
 .projetos_container .projeto_texto .titulo_projeto {
-  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
+}
+.projetos_container .projeto_texto .descricao_projeto {
+  text-align: justify;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
   color: #d3d7bd;
 }
 .projetos_container .projeto_texto .btn_projeto {
   margin-top: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .projetos_container .projeto_texto .titulo_projeto {
+    font-size: 1.3rem;
+  }
+  .projetos_container .projeto_texto .descricao_projeto {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .projeto_titulo {
+    margin-left: 1rem;
+  }
+  .projetos_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
 .divisor_borda {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #d3d7bd;
   width: 80%;
   margin: 0 auto;
   border-top: 1px solid white;
   margin-top: 5rem;
 }
-.divisor_borda section .footer_titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
-  color: #d3d7bd;
-}
 .divisor_borda section .btn_a {
-  padding: 0.7rem;
+  padding: 1rem;
+}
+.divisor_borda section .email_contato {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .divisor_borda .footer_copy {
   margin-bottom: 4rem;

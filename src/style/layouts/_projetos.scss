@@ -3,7 +3,7 @@
 
 .projeto_titulo {
     @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
-    /* @include mixins.margem-central(95%); */
+    font-weight: bold;
     margin: variaveis.$margin-titulo;
     margin-bottom: 1.5rem;
 }
@@ -20,12 +20,40 @@
     .projeto_texto {
         display: flex;
         flex-direction: column;
-        @include mixins.ff-fs-color(variaveis.$ft-titulos, 1rem, variaveis.$cor-texto);
+        @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
         .titulo_projeto {
-            @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.5rem, variaveis.$cor-texto);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .descricao_projeto {
+            text-align: justify;
+            @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
         }
         .btn_projeto {
             margin-top: auto;
         }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projetos_container {
+        .projeto_texto {
+            .titulo_projeto {
+                font-size: 1.3rem;
+            }
+            .descricao_projeto {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .projeto_titulo {
+        margin-left: 1rem;
+    }
+    .projetos_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
 }
