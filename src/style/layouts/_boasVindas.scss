@@ -15,7 +15,8 @@
         .texto_descricao {
             @include mixins.ff-fs-color(variaveis.$ft-texto, 1.1rem, variaveis.$cor-texto);
             text-align: justify;
-            line-height: 1.5rem;
+            line-height: 1.7rem;
+            margin-top: 1rem;
         }
     }
 }

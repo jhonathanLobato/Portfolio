@@ -23,8 +23,17 @@
         }
         .lista__ferrameta {
             list-style: none;
+            padding-left: 20px;
             .tamanhoTexto {
                 @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
+                margin-bottom: 0;
+            }
+            .lista__ferrameta-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5rem;
+                padding-bottom: 1rem;
             }
         }
     }
@@ -42,7 +51,7 @@
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .ferramentas_principal{
         grid-template-columns: repeat(1, 1fr);
     }

@@ -10,13 +10,14 @@
     section {
         .btn_a {
             padding: 1rem;
+            color: variaveis.$cor-texto;
         }
         .email_contato {
-            font-size: 1.1rem;
-            font-weight: bold;
+            font-size: 1rem;
         }
     }
     .footer_copy {
+        @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
         margin-bottom: 4rem;
     }
 }

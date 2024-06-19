@@ -10,9 +10,12 @@
 .projetos_container {
     @include mixins.margem-central(80%);
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2rem;
     .img_projeto {
         width: 100%;
         height: auto;
@@ -31,12 +34,17 @@
         }
         .btn_projeto {
             margin-top: auto;
+            .btn_projeto__a {
+                margin-right: 1rem;
+            }
         }
     }
 }
 
 @media screen and (max-width: 480px) {
     .projetos_container {
+        border: none;
+        padding: 0;
         .projeto_texto {
             .titulo_projeto {
                 font-size: 1.3rem;
@@ -48,7 +56,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
     .projeto_titulo {
         margin-left: 1rem;
     }
