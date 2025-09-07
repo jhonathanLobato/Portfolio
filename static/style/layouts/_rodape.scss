@@ -1,0 +1,23 @@
+@use '../base/variaveis';
+@use '../utilities/mixins';
+
+.divisor_borda {
+    @include mixins.ff-fs-color(variaveis.$ft-titulos, 1.3rem, variaveis.$cor-texto);
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    margin-top: 5rem;
+    section {
+        .btn_a {
+            padding: 1rem;
+            color: variaveis.$cor-texto;
+        }
+        .email_contato {
+            font-size: 1rem;
+        }
+    }
+    .footer_copy {
+        @include mixins.ff-fs-color(variaveis.$ft-texto, 1rem, variaveis.$cor-texto);
+        margin-bottom: 4rem;
+    }
+}
