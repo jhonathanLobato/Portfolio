@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfólio Jhonathan Lobato{% endblock %}</title>
+    <link rel="icon" type="image/png" href="./static/img/favicon.png"> <!-- Ícone da aba -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"> <!-- Inserindo as fontes -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!-- Tailwind CSS -->
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Meu Portfólio de Desenvolvimento full stack Web">
+    <meta property="og:description" content="Confira meus projetos e habilidades em desenvolvimento full stack">
+    <meta property="og:image" content="https://jhonathanlobato.github.io/Portfolio/src/img/preview.jpg">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="">
+        <div class="">
+            <h3 class="">Jhonathan Lobato</h3>
+            <nav>
+                <a href="#projetos" class="texto_nav">Projetos</a>
+                <a href="#contatos" class="texto_nav">Contatos</a>
+                <a href="#sobre_mim" class="texto_nav">Sobre mim</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudoMain">
+        <section class="boas_vindas">
+            <!-- TITULO DE BOAS VINDAS -->
+            <h1 class="boas_vindaTexto" id="sobre_mim">OLÁ VISITANTE, SEJA BEM VINDO</h1>
+            <!-- SOBRE MIM 
+            <section class="conteudoMain_descricao">
+                <p class="texto_descricao">Olá! Meu nome é Jhonathan Lobato e sou um desenvolvedor fullstack web apaixonado por aprender sobre tudo do mundo do desenvolvimento construir este portfólio foi criado para listar meu principais projetos.
+                    <br>
+                    Minha jornada no mundo do desenvolvimento começou em 2019 quando eu entrei na faculdade de Ciência da Computação, e desde então, tenho me empenhado em aprender sobre as mais diversas ferramentas de desenvolvimento web seja backend ou frontend. Apesar dos altos e baixos que tive ao longo do caminho onde algumas vezes me desmotivaram a continuar na área conseguir superar tudo isso e hoje tenho foco total em que faço seguindo uma trilha de aprendizado para ao nível que o mercado exige. 
+                    Ao longo dos anos, tive a oportunidade de trabalhar em uma variedade de projetos, sendo a maioria projetos ligados a cursos e desafios que fiz como forma de aprendizado e fixação de conteúdo aprendido. Esses projetos me permitiram desenvolver um conjunto diversificado de habilidades técnicas, incluindo: HTML/CSS, JavaScript, Python, SQL, algumas bibliotecas e entre outras ferramentas que estão listadas logo abaixo. Algumas ainda estou aprendendo como frameworks e outras ferramentas e bibliotecas e conforme eu me adaptar à elas vou adicionando na seção de ferramentas e competências junto com os projetos.
+                    <br>
+                    Fora do trabalho, sou apaixonado por música- ouvindo ou tocando, uma boa leitura, esportes(sim, um dev que gosta de artes marcias hehe). Acredito que um desenvolvedor com uma vida bem equilibrada é aquele que encontra inspiração tanto dentro quanto fora do mundo da tecnologia as vezes são nesses momentos de descanço que encontramos soluções para problemas. Essas paixões me ajudam a manter a criatividade e a energia para abordar cada novo projeto de cabeça erguida.
+                </p>
+            </section>
+            <!-- LISTAR AS MINHAS HABILIDADES E DEIXAR ELAS EM COLUNAS JUNTAS.. -->
+        </section>
+        <h2 class="competencia_titulo">COMPETÊNCIAS - FERRAMENTAS</h2>
+        <section class="ferramentas_principal">
+            <!-- Linguagens de Programações -->
+            <div class="div_lista">
+                <h3 class="titulo__ferramenta">Linguagens de Programação</h3>
+                <ul class="lista__ferrameta">
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/48/python--v1.png" alt="Icon Python"><p class="tamanhoTexto">Python</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/dusk/64/sql.png" alt="sql"/><p class="tamanhoTexto">Linguagem SQL</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/><p class="tamanhoTexto">HTML / CSS</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/><p class="tamanhoTexto">JavaScript</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Frameworks -->
+            <div class="div_lista">
+                <h3 class="titulo__ferramenta">Frameworks e Bibliotecas</h3>
+                <ul class="lista__ferrameta">
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/48/sass.png" alt="sass"/><p class="tamanhoTexto">Sass</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/48/bootstrap--v1.png" alt="bootstrap--v1"/><p class="tamanhoTexto">Bootstrap</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/fluency/48/tailwind_css.png" alt="tailwind_css"/><p class="tamanhoTexto">Tailwind</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Ferramentas -->
+            <div class="div_lista">
+                <h3 class="titulo__ferramenta">Ferramentas</h3>
+                <ul class="lista__ferrameta">
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/32/linux--v1.png" alt="linux--v1"/><p class="tamanhoTexto">Linux</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/arcade/32/code-file.png" alt="code-file"/><p class="tamanhoTexto">Shell Script</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/32/git.png" alt="git"/><p class="tamanhoTexto">GIT</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/32/webpack.png" alt="webpack"/><p class="tamanhoTexto">Webpack</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Cloud e DevOps -->
+            <div class="div_lista">
+                <h3 class="titulo__ferramenta">Cloud e DevOps</h3>
+                <ul class="lista__ferrameta">
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/nolan/32/amazon-web-services.png" alt="amazon-web-services"/><p class="tamanhoTexto">Amazon AWS</p>
+                    </li>
+                    <li class="lista__ferrameta-item">
+                        <img width="32" height="32" src="https://img.icons8.com/color/32/docker.png" alt="docker"/><p class="tamanhoTexto">Docker</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- PROJETOS -->
+        <h2 class="projeto_titulo" id="projetos">PROJETOS PESSOAIS</h2>
+        <section class="projetos_container">
+            <div>
+                <img class="img_projeto" src="./src/img/projeto_portfolio.png" alt="foto real madrid campeão 2024">
+            </div>
+            <div class="projeto_texto">    
+                <h3 class="titulo_projeto">Portfolio Pessoal</h3>
+                <P class="descricao_projeto">Este projeto é o próprio portfólio que você está vendo e foi desenvolvido do zero para apresentar meus projetos de desenvolvimento e demonstrar minhas habilidades técnicas. O site foi projetado com um design responsivo que se adapta perfeitamente a todos os dispositivos, garantindo uma experiência de usuário consistente tanto em dispositivos móveis quanto em desktops. A galeria de projetos é detalhada, oferecendo descrições e links para repositórios de código ou demonstrações ao vivo, permitindo uma visualização completa do meu trabalho.
+                    <br>
+                    As tecnologias utilizadas para este projeto incluem HTML5 para a estruturação do conteúdo, CSS3 para estilização e design responsivo. Além disso, utilizei Sass como pré-processador CSS para facilitar a manutenção do código e modularizar o estilo, permitindo um desenvolvimento mais eficiente e organizado.As principais funcionalidades do site incluem uma seção dedicada aos projetos, uma seção sobre mim, experiência e habilidades, e uma parte de contato para facilitar a comunicação com visitantes.
+                <div class="btn_projeto">
+                    <a class="btn btn-outline-light btn_projeto__a" target="_blank" href="https://jhonathanlobato.github.io/Portfolio/" rel="noopener noreferrer">Ver Projeto</a>
+                    <a class="btn btn-outline-light btn_projeto__a" target="_blank" href="https://github.com/jhonathanLobato/Portfolio" rel="noopener noreferrer">Ver Código</a>
+                </div>
+            </div>           
+        </section>
+        <section class="projetos_container">
+            <div class="projeto_imagem">
+                <img class="img_projeto" src="./src/img/projeto_steam(1).png" alt="print do projeto steam desfocado">
+            </div>
+            <div class="projeto_texto">    
+                <h3 class="titulo_projeto">Sistema de compra de jogos online - STEAM</h3>
+                <P class="descricao_projeto">Este projeto foi um dos primeiros projetos que fiz quando entrei na área de frontend é uma recriação da interface da Steam, a famosa plataforma de distribuição digital de jogos. O objetivo é replicar o design e a funcionalidade da Steam, proporcionando uma experiência de usuário similar à original. O site apresenta uma página inicial com jogos em destaque, promoções, navegação por categorias, páginas detalhadas para cada jogo e uma funcionalidade de carrinho de compras. O projeto está sendo desenvolvido utilizando HTML, CSS, JavaScript e Tailwind CSS. Planejo refazer esse projeto do zero deixando mais bonito e funcional e usando novas tecnologias que antes eu não tinha conhecimento. E sim, ele ainda está com uma interface bem feia que também vai ser mudada.</P>
+                <div class="btn_projeto">
+                    <a class="btn btn-outline-light btn_projeto__a" target="_blank" href="https://jhonathanlobato.github.io/Spillrakett/" rel="noopener noreferrer">Ver Projeto</a>
+                    <a class="btn btn-outline-light btn_projeto__a" target="_blank" href="https://github.com/jhonathanLobato/Spillrakett/tree/frontend" rel="noopener noreferrer">Ver Código</a>
+                </div>
+            </div>
+        </section>
+        <!-- PROJETOS -->
+        <h2 class="projeto_titulo"><strong>PROJETOS DE CURSOS E DESAFIOS</strong></h2>
+        <section class="projetos_container">
+            <div class="projeto_imagem">
+                <img class="img_projeto" src="./src/img/projeto_github.png" alt="print da tela do Github">
+            </div>
+            <div class="projeto_texto">    
+                <h3 class="titulo_projeto">Conjunto de códigos web - Alura</h3>
+                <P class="descricao_projeto">Aqui se encontra um repositório com vários projetos feitos em cursos da Alura com foco em diversas tecnologias seja o básico de HTML ou projetos que ensinam o DOM do JavaScript. Aqui se encontra o meu primeiro contato com a área do Frontend e isso fica claro na forma de escrita e recursos usados na criação dos projetos.
+                    <br>
+                    Esses projetos não apenas demonstram minha jornada inicial no desenvolvimento Frontend, mas também refletem meu compromisso em aprender continuamente e aprimorar minhas habilidades técnicas. Cada projeto é uma oportunidade de aplicar conceitos aprendidos em cursos práticos e de explorar novas funcionalidades e técnicas de programação.
+                </P>
+                <div class="btn_projeto">
+                    <a class="btn btn-outline-light btn_projeto__a" target="_blank" href="https://github.com/jhonathanLobato/Projetos-Alura-Front-End" rel="noopener noreferrer">Ver Projeto</a>
+                </div>
+            </div>           
+        </section>
+    </main>
+    <footer class="text-center py-3 divisor_borda" id="contatos">
+        <!-- CONTATOS -->
+        <section>
+            <p class="footer_titulo">Algumas maneiras de entrar em contato comigo</p>
+            <div class="d-flex justify-content-center footer_div">
+                <a target="_blank" href="https://www.linkedin.com/in/jhonathan-lobato/" rel="noopener noreferrer" class="btn btn-outline-light mx-2 btn_a">LinkedIn</a>
+                <a target="_blank" href="https://github.com/jhonathanLobato" rel="noopener noreferrer" class="btn btn-outline-light mx-2 btn_a">GitHub</a>
+            </div>
+            <p class="mt-3 email_contato">Email: jhonathan.lobato@proton.me</p>
+        </section>
+        <p class="footer_copy">&copy; 2024 Jhonathan Lobato</p>
+    </footer>
+</body>
+</html>
