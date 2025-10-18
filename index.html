@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-[#0b0c21] to-[#2d154a]">
+    <main class="pt-12 px-40">
+        <!-- CRIANDO UMA DIV PARA COLOCAR DUAS COLUNAS, A DA ESQUERDA É MENOR SO VAI TER NOME, FOTO E CONTATOS. A DA ESQUERDA VAI SER MAIOR E OCUPAR MAIS ESPAÇO -->
+        <div class="flex gap-4">
+            <section class="bg-[#0B0C0F] p-4 rounded shadow flex flex-col items-center w-3/5">
+                <img src="../static/img/foto-perfil.jpg" alt="Foto de Jhonathan Lobato" class=" w-72 h-48 object-cover ">
+                <h3 class="texto-cor-primaria text-center pt-">Solta A Carta Tigrinho</h3>
+            </section>
+
+
+            <section class="bg-[#0B0C0F] p-6 rounded shadow">
+                <h2 class="text-2xl font-bold mb-2 texto-cor-primaria">Sobre Mim</h2>
+                <p class="texto-cor-segundaria text-base font-light leading-loose text-justify">Cloud & DevOps Engineer com base sólida em automação, infraestrutura como código (IaC) e engenharia de sistemas escaláveis. Atuo com AWS, Terraform, Docker, Kubernetes, GitHub Actions e Python para projetar, automatizar e otimizar ambientes em nuvem, garantindo eficiência, confiabilidade e performance.</p>
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
+
