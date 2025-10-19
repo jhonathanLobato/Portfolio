@@ -1,17 +1,12 @@
 .bg-anim{
   background: linear-gradient(120deg, #FFC2D0, #D7D5F2, #83A3C7);
   background-size: 200% 200%;
-  animation: gradient-move 10s ease-in-out infinite alternate;
+  animation: gradient-move 4s ease-in-out infinite alternate;
 }
 @keyframes gradient-move{
   0%{ background-position: 0% 50%; }
   100%{ background-position: 100% 50%; }
 }
-/* Acessibilidade */
-@media (prefers-reduced-motion: reduce){
-  .bg-anim{ animation: none; }
-}
-
 
 
 .texto-principal{
@@ -20,7 +15,7 @@
 }
 
 .texto-cor-segundaria{
-  color: #555555;
+  color: #4A4A4A;
   font-family: OCR A Std, monospace;
 }
 
@@ -30,13 +25,15 @@
 }
 
 
-
-.skill-card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+.glass-card {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.skill-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(63, 63, 63, 0.4);
+.glass-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.08);
 }
-
