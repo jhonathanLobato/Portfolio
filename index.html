@@ -6,160 +6,141 @@
   <title>Jhonathan — Portfólio</title>
   <link rel="icon" type="image/png" href="/static/img/favicon.png" />
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Rajdhani:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="/static/js/main.js"></script>
 </head>
-
-<body class="min-h-screen text-white" style="background:linear-gradient(90deg,#0b0c21,#2d154a)">
+<body class="min-h-screen">
+    <div class="bg-anim fixed inset-0 -z-10"></div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 mt-10">
-        <!-- NAV: Abas estilo pasta -->
-        <div class="flex justify-end">
-        <!-- Aba: Sobre -->
-        <button id="tabbtn-sobre" class="group relative focus:outline-none" aria-selected="true">
-            <!-- Aba (etiqueta) -->
-            <div class="relative z-20 h-7 min-w-[120px] px-4 flex items-center justify-center rounded-t-md font-semibold shadow-inner">
-            Sobre mim
-            </div>
-        </button>
-
-        <!-- Aba: Projetos -->
-        <button id="tabbtn-projetos" class="group relative focus:outline-none" aria-selected="false">
-            <div class="relative z-20 h-7 min-w-[120px] px-4 flex items-center justify-center rounded-t-md font-semibold shadow-inner">
-            Projetos
-            </div>
-        </button>
-
-        <!-- Aba: Blog -->
-        <button id="tabbtn-blog" class="group relative focus:outline-none" aria-selected="false">
-            <div class="relative z-20 h-7 min-w-[120px] px-4 flex items-center justify-center rounded-t-md font-semibold shadow-inner">
-            Blog
-            </div>
-        </button>
+        <div class="flex justify-end texto-principal text-lg">
+            <button id="tabbtn-sobre" class="group relative focus:outline-none" aria-selected="true">
+                <div class="relative z-20 h-7 min-w-[120px] flex items-center justify-center rounded-t-md font-semibold">
+                Sobre Mim
+                </div>
+            </button>
+            <button id="tabbtn-projetos" class="group relative focus:outline-none" aria-selected="false">
+                <div class="relative z-20 h-7 min-w-[120px] flex items-center justify-center rounded-t-md font-semibold">
+                Projetos
+                </div>
+            </button>
+            <button id="tabbtn-blog" class="group relative focus:outline-none" aria-selected="false">
+                <div class="relative z-20 h-7 min-w-[120px] flex items-center justify-center rounded-t-md font-semibold">
+                Blog
+                </div>
+            </button>
         </div>
-
-        <!-- Painel -->
         <section id="panel" class="rounded-b-xl p-6 focus:outline-none" tabindex="-1" aria-live="polite"></section>
     </div>
 
     <template id="tmpl-sobre">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <!-- ESQUERDA -->
             <section class="md:col-span-2 flex flex-col items-center text-center">
                 <img src="/static/img/foto-perfil.jpg" alt="Foto de Jhonathan"
                     class="w-72 h-48 object-cover rounded-lg shadow-xl" />
-                <h2 class="text-3xl font-bold my-8">Jhonathan Lobato</h2>
-
-                <p class="text-gray-300 text-sm px-2.5 py-0.5 bg-white/10 rounded">Cloud & DevOps</p>
-                <hr class="my-8 border border-white/10 w-60" />
-
-                <!-- CONTATOS -->
-                <div class="mt-6 space-y-4 text-left w-full max-w-[260px]">
-                    <!-- E-mail -->
+                <h2 class="text-3xl font-bold my-8 texto-principal">Jhonathan Lobato</h2>
+                <p class="text-sm font-medium texto-principal bg-gray-300 p-1 rounded-lg">Cloud & DevOps</p>
+                <hr class="my-8 border w-60 border-black" />
+                <div class="mt-4 space-y-4 text-left w-full max-w-[260px]">
                     <div class="flex items-start gap-3">
-                    <img src="/static/img/azure.svg" alt="Email" class="w-6 h-6 mt-1 opacity-80">
-                    <div>
-                        <span class="text-sm text-gray-400">Email</span>
-                        <p class="text-white font-medium">seuemail@email.com</p>
+                        <img src="/static/img/email.png" alt="Email" class="w-6 h-6 mt-1 opacity-80">
+                        <div>
+                            <span class="text-sm texto-cor-segundaria">Email</span>
+                            <p class="font-medium">jhonathan.lobato@proton.me</p>
+                        </div>
                     </div>
-                    </div>
-                    <!-- LinkedIn -->
                     <div class="flex items-start gap-3">
-                    <img src="/static/img/azure.svg" alt="LinkedIn" class="w-6 h-6 mt-1 opacity-80">
-                    <div>
-                        <span class="text-sm text-gray-400">LinkedIn</span>
-                        <p class="text-white font-medium">
-                        <a href="https://www.linkedin.com/in/seulinkedin" target="_blank" class="hover:text-violet-400 transition">
-                            linkedin.com/in/seulinkedin
-                        </a>
-                        </p>
+                        <img src="/static/img/linkedin.png" alt="LinkedIn" class="w-6 h-6 mt-1 opacity-80">
+                        <div>
+                            <span class="text-sm texto-cor-segundaria">LinkedIn</span>
+                            <p class="font-medium">
+                            <a href="https://www.linkedin.com/in/seulinkedin" target="_blank" class="hover:text-violet-400 transition">
+                                linkedin.com/in/seulinkedin
+                            </a>
+                            </p>
+                        </div>
                     </div>
-                    </div>
-                    <!-- GitHub -->
                     <div class="flex items-start gap-3">
-                    <img src="/static/img/azure.svg" alt="GitHub" class="w-6 h-6 mt-1 opacity-80">
-                    <div>
-                        <span class="text-sm text-gray-400">GitHub</span>
-                        <p class="text-white font-medium">
-                        <a href="https://github.com/seuusuario" target="_blank" class="hover:text-violet-400 transition">
-                            github.com/seuusuario
-                        </a>
-                        </p>
+                        <img src="/static/img/github.png" alt="GitHub" class="w-6 h-6 mt-1 opacity-80">
+                        <div>
+                            <span class="text-sm texto-cor-segundaria">GitHub</span>
+                            <p class="font-medium">
+                            <a href="https://github.com/jhonathanLobato" target="_blank" class="hover:text-violet-400 transition">
+                                github.com/jhonathanLobato
+                            </a>
+                            </p>
+                        </div>
                     </div>
-                    </div>
-                    <!-- Discord -->
                     <div class="flex items-start gap-3">
-                    <img src="/static/img/azure.svg" alt="Discord" class="w-6 h-6 mt-1 opacity-80">
+                    <img src="/static/img/discord.png" alt="Discord" class="w-6 h-6 mt-1 opacity-80">
                     <div>
-                        <span class="text-sm text-gray-400">Discord</span>
-                        <p class="text-white font-medium">SeuUser#0000</p>
+                        <span class="text-sm texto-cor-segundaria">Discord</span>
+                        <p class="font-medium">SeuUser#0000</p>
                     </div>
                     </div>
                 </div>
             </section>
 
-            <!-- DIREITA -->
             <section class="md:col-span-3">
-                <h3 class="text-3xl font-bold">Sobre Mim</h3>
-                <p class="mt-6 text-gray-300 leading-7 text-justify">
-                    Cloud & DevOps Engineer com base sólida em automação, IaC e engenharia de sistemas escaláveis. Experiência com AWS, Terraform, Docker, Kubernetes, GitHub Actions e Python para projetar, automatizar e otimizar ambientes em nuvem, garantindo eficiência, confiabilidade e performance.
+                <h3 class="text-3xl font-bold texto-principal">Sobre Mim</h3>
+                <p class="mt-4 leading-7 text-justify texto-cor-segundaria text-sm font-medium">
+                    Meu nome é Jhonathan e sou Cloud & DevOps Engineer. Gosto de resolver problemas com engenharia de verdade — escrever código que automatiza, cria eficiência e simplifica a vida das pessoas. Trabalho com AWS, Terraform, Docker, Kubernetes, GitHub Actions e Linux, construindo pipelines, infraestrutura reprodutível e sistemas prontos para escalar.
                 </p>
-                <p class="mt-2 text-gray-300 leading-7 text-justify">
+                <p class="mt-2 leading-7 text-justify texto-cor-segundaria text-sm font-medium">
                     Curto documentar meu progresso e transformar aprendizados em projetos práticos. Aqui você encontra alguns deles, além do meu blog com bastidores e anotações técnicas.
                 </p>
 
-                <!-- Habilidades -->
-                <div>
-                    <h3 class="text-3xl font-bold mt-8">Habilidades DevOps</h3>
+                <div class="texto-itens text-sm">
+                    <h3 class="text-3xl font-bold mt-8 texto-principal">Habilidades DevOps</h3>
                     <div class="mt-6 grid gap-4 sm:grid-cols-3">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/aws.svg" alt="AWS" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">AWS</span>
+                        <span class="mt-2">AWS</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/terraform.svg" alt="Terraform" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Terraform</span>
+                        <span class="mt-2">Terraform</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/docker.svg" alt="Docker" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Docker</span>
+                        <span class="mt-2">Docker</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/kubernetes.svg" alt="Kubernetes" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Kubernetes</span>
+                        <span class="mt-2">Kubernetes</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/ansible.svg" alt="Ansible" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Ansible</span>
+                        <span class="mt-2">Ansible</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/linux.svg" alt="Linux/RHEL" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Linux/RHEL</span>
+                        <span class="mt-2">Linux/RHEL</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/githubactions.svg" alt="GitHub Actions" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">GitHub Actions</span>
+                        <span class="mt-2">GitHub Actions</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/git.svg" alt="Git" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Git</span>
+                        <span class="mt-2">Git</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/prometheus.svg" alt="Prometheus" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Prometheus</span>
+                        <span class="mt-2">Prometheus</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/grafana.svg" alt="Grafana" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Grafana</span>
+                        <span class="mt-2">Grafana</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/python.svg" alt="Python" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Python</span>
+                        <span class="mt-2">Python</span>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center border p-2 rounded-lg border-black skill-card">
                         <img src="/static/img/nginx.svg" alt="Nginx" class="w-16 h-16 object-contain" />
-                        <span class="mt-2 text-gray-300">Nginx</span>
+                        <span class="mt-2">Nginx</span>
                     </div>
                     </div>
                 </div>
@@ -194,22 +175,22 @@
         </div>
     </template>
 
-  <template id="tmpl-blog">
-    <h2 class="text-2xl font-bold mb-4">Blog</h2>
-    <p class="text-gray-300 mb-4">Quando decidir a plataforma (Hashnode/Ghost/Medium), basta apontar os links abaixo.</p>
-    <div class="grid gap-4 sm:grid-cols-2">
-      <article class="bg-[#0f1016] border border-white/10 rounded-lg p-4 shadow-xl">
-        <h3 class="font-semibold">Como estruturei meu portfólio DevOps</h3>
-        <p class="text-gray-300 text-sm mt-1">Netlify + backend externo e próximos passos.</p>
-        <a class="inline-flex mt-3 px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 transition" href="https://seublog.com/post/portfolio-devops" target="_blank" rel="noopener">Ler</a>
-      </article>
-      <article class="bg-[#0f1016] border border-white/10 rounded-lg p-4 shadow-xl">
-        <h3 class="font-semibold">Terraform do zero ao módulo</h3>
-        <p class="text-gray-300 text-sm mt-1">Boas práticas, layout de repositório e reuso de componentes.</p>
-        <a class="inline-flex mt-3 px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 transition" href="https://seublog.com/post/terraform-reuso" target="_blank" rel="noopener">Ler</a>
-      </article>
-    </div>
-  </template>
+    <template id="tmpl-blog">
+        <h2 class="text-2xl font-bold mb-4">Blog</h2>
+        <p class="text-gray-300 mb-4">Quando decidir a plataforma (Hashnode/Ghost/Medium), basta apontar os links abaixo.</p>
+        <div class="grid gap-4 sm:grid-cols-2">
+        <article class="bg-[#0f1016] border border-white/10 rounded-lg p-4 shadow-xl">
+            <h3 class="font-semibold">Como estruturei meu portfólio DevOps</h3>
+            <p class="text-gray-300 text-sm mt-1">Netlify + backend externo e próximos passos.</p>
+            <a class="inline-flex mt-3 px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 transition" href="https://seublog.com/post/portfolio-devops" target="_blank" rel="noopener">Ler</a>
+        </article>
+        <article class="bg-[#0f1016] border border-white/10 rounded-lg p-4 shadow-xl">
+            <h3 class="font-semibold">Terraform do zero ao módulo</h3>
+            <p class="text-gray-300 text-sm mt-1">Boas práticas, layout de repositório e reuso de componentes.</p>
+            <a class="inline-flex mt-3 px-3 py-2 rounded bg-blue-600 hover:bg-blue-500 transition" href="https://seublog.com/post/terraform-reuso" target="_blank" rel="noopener">Ler</a>
+        </article>
+        </div>
+    </template>
 </body>
 
 </html>
