@@ -44,13 +44,90 @@
                 <p class="text-sm font-medium texto-principal bg-[#D7D5F2] p-1 rounded-lg">Cloud & DevOps</p>
                 <hr class="my-8 border w-60 border-black" />
                 <div class="mt-4 space-y-4 text-left w-full max-w-[260px]">
-                    <div class="flex items-start gap-3">
+                    <!-- EMAIL -->
+                    <div class="flex items-start gap-3 relative group">
                         <img src="/static/img/email.png" alt="Email" class="w-6 h-6 mt-1 opacity-80">
                         <div>
                             <span class="text-sm texto-cor-segundaria">Email</span>
-                            <p class="font-medium">jhonathan.lobato@proton.me</p>
+                            <p class="font-medium flex items-center gap-2">
+                                <span id="email-text">jhonathan.lobato@proton.me</span>
+
+                                <!-- Botão de copiar -->
+                                <button id="copy-btn" class="p-1 rounded-md hover:bg-gray-200 transition text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M8 16.5h8m-8-4h8m-8-4h8M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                                    </svg>
+                                </button>
+                            </p>
                         </div>
+                        <!-- Tooltip -->
+                        
+                        <span id="tooltip" class="bottom-full mb-3 left-1/2 -translate-x-1/2 text-xs bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
+                            Copiar
+                        </span>
                     </div>
+                    <script>
+                        const copyBtn = document.getElementById('copy-btn');
+                        const emailText = document.getElementById('email-text').textContent;
+                        const tooltip = document.getElementById('tooltip');
+
+                        copyBtn.addEventListener('click', async () => {
+                            await navigator.clipboard.writeText(emailText);
+                            tooltip.textContent = 'Copiado!';
+                            tooltip.classList.add('opacity-100');
+
+                            setTimeout(() => {
+                            tooltip.textContent = 'Copiar';
+                            tooltip.classList.remove('opacity-100');
+                            }, 1500);
+                        });
+                    </script>
+
+                    <!-- DISCORD -->
+                    <div class="flex items-start gap-3 relative group">
+                        <img src="/static/img/discord.png" alt="Discord" class="w-6 h-6 mt-1 opacity-80">
+                        <div>
+                            <span class="text-sm texto-cor-segundaria">Discord</span>
+                            <p class="font-medium flex items-center gap-2">
+                                <span id="discord-text">lobato1</span>
+
+                                <!-- Botão de copiar -->
+                                <button id="copy-discord-btn" class="p-1 rounded-md hover:bg-gray-200 transition text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8 16.5h8m-8-4h8m-8-4h8M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                                    </svg>
+                                </button>
+                            </p>
+                        </div>
+                        <!-- Tooltip -->
+                        <span id="discord-tooltip" class="bottom-full mb-3 left-1/2 -translate-x-1/2 text-xs bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
+                        Copiar
+                        </span>
+                    </div>
+                    <script>
+                    const discordBtn = document.getElementById('copy-discord-btn');
+                    const discordText = document.getElementById('discord-text').textContent;
+                    const discordTooltip = document.getElementById('discord-tooltip');
+
+                    discordBtn.addEventListener('click', async () => {
+                        await navigator.clipboard.writeText(discordText);
+                        discordTooltip.textContent = 'Copiado!';
+                        discordTooltip.classList.add('opacity-100');
+
+                        setTimeout(() => {
+                        discordTooltip.textContent = 'Copiar';
+                        discordTooltip.classList.remove('opacity-100');
+                        }, 1500);
+                    });
+                    </script>
+
+                    <!-- LINKEDIN -->
                     <div class="flex items-start gap-3">
                         <img src="/static/img/linkedin.png" alt="LinkedIn" class="w-6 h-6 mt-1 opacity-80">
                         <div>
@@ -62,6 +139,8 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- GITHUB -->
                     <div class="flex items-start gap-3">
                         <img src="/static/img/github.png" alt="GitHub" class="w-6 h-6 mt-1 opacity-80">
                         <div>
@@ -73,8 +152,10 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- BLOG -->
                     <div class="flex items-start gap-3">
-                        <img src="/static/img/github.png" alt="Blog" class="w-6 h-6 mt-1 opacity-80">
+                        <img src="/static/img/dev-to.png" alt="Blog" class="w-6 h-6 mt-1 opacity-80">
                         <div>
                             <span class="text-sm texto-cor-segundaria">Blog</span>
                             <p class="font-medium">
@@ -84,23 +165,16 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3">
-                        <img src="/static/img/discord.png" alt="Discord" class="w-6 h-6 mt-1 opacity-80">
-                        <div>
-                            <span class="text-sm texto-cor-segundaria">Discord</span>
-                            <p class="font-medium">lobato1</p>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             <section class="md:col-span-3">
                 <h3 class="text-3xl font-bold texto-principal">Sobre Mim</h3>
                 <p class="mt-4 leading-7 text-justify texto-cor-segundaria text-sm font-medium">
-                    Meu nome é Jhonathan e sou Cloud & DevOps Engineer. Gosto de resolver problemas com engenharia de verdade — escrever código que automatiza, cria eficiência e simplifica a vida das pessoas. Trabalho com AWS, Terraform, Docker, Kubernetes, GitHub Actions e Linux, construindo pipelines, infraestrutura reprodutível e sistemas prontos para escalar.
+                    Meu nome é Jhonathan e sou Cloud & DevOps Engineer. Tenho experiência em projetar, implementar e gerenciar infraestruturas na nuvem, além de automatizar processos de desenvolvimento e operações utilizando práticas DevOps.
                 </p>
                 <p class="mt-2 leading-7 text-justify texto-cor-segundaria text-sm font-medium">
-                    Curto documentar meu progresso e transformar aprendizados em projetos práticos. Aqui você encontra alguns deles, além do meu blog com bastidores e anotações técnicas.
+                    Sou apaixonado por tudo que envolve infraestrutura e busco constantemente aprimorar meus conhecimentos e enfrentar novos desafios que me permitam evoluir tecnicamente e gerar valor nos projetos em que atuo.
                 </p>
 
                 <div class="texto-itens text-sm">
